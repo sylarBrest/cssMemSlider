@@ -3,3 +3,48 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    scroll-behavior: smooth;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.main {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+}
+
+.slider {
+    transition: 0.5s;
+    max-width: 27rem;
+}
+
+.slide {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    height: 100%;
+	width: 100%;
+}
+
+.down-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-dot {
+    padding: 0.25rem;
+}
+
+.dot {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
