@@ -139,7 +139,7 @@ body {
     transform: translateX(-300%);
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 499px) {
     .main .under {
         flex-flow: column-reverse;
         gap: 1.5rem;
