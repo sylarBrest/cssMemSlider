@@ -2,6 +2,7 @@
     --color-black: #000000;
     --color-white: #FFFFFF;
     --color-blue: #647ADA;
+    --color-purple: #83368D;
 }
 
 * {
@@ -86,23 +87,15 @@ body {
     border-radius: 50%;
     border: solid 0.15rem var(--color-blue);
     background-color: var(--color-blue);
-    transition: 0.5s;
+    transition: 0.3s;
     cursor: pointer;
-}
-
-.link-dot:hover > .dot {
-    border-color: var(--color-white);
-    background-color: var(--color-white);
-}
-
-.main .dots > .link-dot:first-child > .dot {
-    background-color: var(--color-black);
 }
 
 .main > .slides:target ~ .under .dots > .link-dot > .dot {
     background-color: var(--color-blue);
 }
 
+.main .dots > .link-dot:first-child > .dot,
 #slide1:target ~ .under .dots > *:nth-child(1) > .dot,
 #slide2:target ~ .under .dots > *:nth-child(2) > .dot,
 #slide3:target ~ .under .dots > *:nth-child(3) > .dot,
@@ -110,6 +103,8 @@ body {
     background-color: var(--color-black);
 }
 
+.link-dot:hover > .dot,
+.main .dots > .link-dot:first-child:hover > .dot,
 .main > .slides:target ~ .under .dots > .link-dot:hover > .dot,
 #slide1:target ~ .under .dots > *:nth-child(1):hover > .dot,
 #slide2:target ~ .under .dots > *:nth-child(2):hover > .dot,
@@ -117,6 +112,17 @@ body {
 #slide4:target ~ .under .dots > *:nth-child(4):hover > .dot {
     border-color: var(--color-white);
     background-color: var(--color-white);
+}
+
+.link-dot:active > .dot,
+.main .dots > .link-dot:first-child:active > .dot,
+.main > .slides:target ~ .under .dots > .link-dot:active > .dot,
+#slide1:target ~ .under .dots > *:nth-child(1):active > .dot,
+#slide2:target ~ .under .dots > *:nth-child(2):active > .dot,
+#slide3:target ~ .under .dots > *:nth-child(3):active > .dot,
+#slide4:target ~ .under .dots > *:nth-child(4):active > .dot {
+    border-color: var(--color-purple);
+    background-color: var(--color-purple);
 }
 
 #slide1:target ~ .slider,
